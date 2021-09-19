@@ -28,6 +28,7 @@ class AlterRememberMeToAdmins extends Migration
     {
         Schema::table('admins', function (Blueprint $table) {
             //
+            $table->dropColumn('remember_token');
         });
     }
 }
